@@ -1,0 +1,50 @@
+# sniper_bolt.obj
+# Ready-made OBJ for Blender
+# Clean, low-poly Rivals-style sniper bolt
+
+o sniper_bolt_clean
+
+# main body
+v -0.35 -0.35 0.0
+v 0.35 -0.35 0.0
+v 0.35 0.35 0.0
+v -0.35 0.35 0.0
+v -0.35 -0.35 10.5
+v 0.35 -0.35 10.5
+v 0.35 0.35 10.5
+v -0.35 0.35 10.5
+v 0.00 0.00 13.5
+
+# left stabilizer
+v -0.90 0.00 -1.0
+v -0.90 0.00 0.0
+v 0.00 0.75 0.0
+v 0.00 0.75 -1.0
+
+# right stabilizer
+v 0.90 0.00 -1.0
+v 0.90 0.00 0.0
+v 0.00 -0.75 0.0
+v 0.00 -0.75 -1.0
+
+s off
+
+# body
+f 1 2 3 4
+f 5 6 7 8
+f 1 2 6 5
+f 2 3 7 6
+f 3 4 8 7
+f 4 1 5 8
+
+# tip
+f 5 6 9
+f 6 7 9
+f 7 8 9
+f 8 5 9
+
+# left fin
+f 10 11 12 13
+
+# right fin
+f 14 15 16 17
